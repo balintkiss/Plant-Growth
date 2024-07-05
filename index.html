@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Plant Growth</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <p class="logo-title">Plant Growth</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping" title="shopping cart"> Cart</i>
+                <i class="fa-solid fa-user" title="login"> login</i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-text">
+                <h1>Welcome to Plant Growth</h1>
+                <p>Your trusted source for high-quality plants</p>
+                <button>Explore our plants</button>
+            </div>
+        </div>
+
+        <div class="container-one">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/images/pexels-photo-807598.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider/plant2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider/plant3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider/plants3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider/plant4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider/plant5..jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            <div class="container-one-text">
+            <h2>Why Choose Us</h2>
+            <div class="list-side">
+                <div class="list-side-element">
+                    <h4>High Quality Plants</h4>
+                    <p>We offer a wide variety of high-quality fresh plants.</p>
+                </div>
+                <div class="list-side-element">
+                    <h4>Expert Advice</h4>
+                    <p>Our team provides expert advice for plant care.</p>
+                </div>
+                <div class="list-side-element">
+                    <h4>Competetive Price</h4>
+                    <p>We offer competetive prices on all our plants.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+        <div class="container-two">
+            <h2>Our Plants</h2>
+            <div class="swiper-two mySwiper-two">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/images/slider2/slider1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider2/slider2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider2/slider3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider2/slider4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider2/slider5.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slider2/slider6.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        <div class="container-three">
+            <div class="google-map">
+                <div id="map"></div>
+            </div>
+            <div class="contact-side">
+                <h1>Contacts:</h1>
+                <h4><i class="fa-solid fa-envelope fa-2xl" style="color: #0cb111;"></i> E-mail</h4>
+                <a href="">plantsgrowth@plants.com</a>
+                <h4><i class="fa-solid fa-phone fa-2xl" style="color: #0cb111;"></i> Phone</h4>
+                <a href="">+3655555555</a>
+                <h4><i class="fa-solid fa-location-dot fa-2xl" style="color: #0cb111;"></i> Location</h4>
+                <p>Budapest, Hungary</p>
+                <p>Fantasy Café<br>
+                    1234 Imaginary Street,<br>
+                </p>
+            </div>
+        </div>
+        <div class="container-four">
+            <h1>Get in Touch</h1>
+            <form action="#">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                <label for="text">Message</label><br>
+                <textarea name="message" id="message" placeholder="Message us" required></textarea><br><br>
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer">
+            <hr>
+            <div class="footer-title">
+                <h2>Plant Growth</h2>
+                <p>Your trusted source for high-quality plants.</p>
+            </div>
+            <div class="footer-nav">
+                <h2>Navigation</h2>
+                <a href="#">Home Page</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+            </div>
+            <div class="footer-socials">
+               <h2>Socials</h2>
+               <a href="#">Facebook</a>
+               <a href="#">Instagram</a>
+               <a href="#">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
